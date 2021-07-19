@@ -35,3 +35,11 @@ export const withAuthRedirect =
 
 Использование:
 ... = connect(mstp, mdtp)(withAuthRedirect(Component));
+
+
+
+Перед перерендером реакт спрашивает компоненту, а нужно ли ей обновиться:
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return nextProps !== this.props || nextState != this.state
+    }
+Если унаследовать компоненту от PureComponent, то там эта проверка автоматически есть

@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./ProfileInfo.module.scss"
+import css from "./ProfileInfo.module.css"
 import Preloader from "../../common/Preloader";
 import noAva from "../../../assets/images/user.png"
 

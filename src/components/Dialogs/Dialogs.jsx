@@ -1,5 +1,5 @@
 import React from "react"
-import css from "./Dialogs.module.scss"
+import css from "./Dialogs.module.css"
 import DialogItems from "./DialogItems/DialogItems";
 import Messages from "./Messages/Messages";
 import {connect} from "react-redux";

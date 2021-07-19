@@ -6,7 +6,7 @@ import InputInForm2 from "../common/FormsControls/InputInForm(gen2)";
 import {connect} from "react-redux";
 import {loginTC, logoutTC} from "../../realRedux/authReducer";
 import {Redirect} from "react-router-dom";
-import formCss from "../common/FormsControls/FormsConrtol.module.scss";
+import formCss from "../common/FormsControls/FormsConrtol.module.css";
 
 
 const PasswordInput = ElementInFormGen3("input");

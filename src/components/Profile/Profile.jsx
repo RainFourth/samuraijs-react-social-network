@@ -1,6 +1,6 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
 import MyPosts from './MyPosts/MyPosts';
-import css from "./Profile.module.scss"
+import css from "./Profile.module.css"
 import ProfileInfoOLD from "./ProfileInfo/ProfileInfoOLD";
 import {
     getUserProfile,

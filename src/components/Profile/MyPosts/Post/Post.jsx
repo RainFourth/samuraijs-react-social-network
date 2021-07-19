@@ -1,5 +1,5 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
-import css from "./Post.module.scss"
+import css from "./Post.module.css"
 
 
 

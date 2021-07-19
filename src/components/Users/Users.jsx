@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
-import css from "./Users.module.scss"
+import css from "./Users.module.css"
 import {
     setCurrentPageAC, setTotalUsersCntAC,
     addFollowingUserIdAC, deleteFollowingUserIdAC, requestUsersThunkCreator, follow, unfollow

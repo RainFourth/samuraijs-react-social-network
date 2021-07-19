@@ -1,5 +1,5 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
-import css from "./MyPosts.module.scss"
+import css from "./MyPosts.module.css"
 import Post from './Post/Post';
 import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../realRedux/profileReducer";
 

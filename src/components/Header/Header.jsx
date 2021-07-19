@@ -1,5 +1,5 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
-import css from "./Header.module.scss"
+import css from "./Header.module.css"
 import {NavLink} from "react-router-dom";
 import * as axios from "axios";
 import {connect} from "react-redux";

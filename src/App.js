@@ -1,6 +1,6 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
 import logo from './logo.svg'; //импорт из файла
-import './App.scss'; //импорт разметки - css классы можно использовать напрямую
+import './App.css'; //импорт разметки - css классы можно использовать напрямую
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
@@ -91,6 +91,7 @@ class App extends React.Component {
         this.props.initApp();
         //alert("App component did mount (вмонтирована в DOM. Дедается один раз, когда первый раз показывается компонента)");
     }
+
 
     render() {
         const props = this.props;

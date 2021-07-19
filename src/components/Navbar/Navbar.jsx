@@ -3,7 +3,7 @@ import React from 'react'; //импорт из модуля react (они леж
 //Navbar.scss стал модулем (добавить .module в имя файла)
 //сделано для уникальности названия классов в css (по факту к именам классов добавляются префикс и рандомный суффикс)
 //и к этим классам обращаемся через css
-import css from "./Navbar.module.scss"
+import css from "./Navbar.module.css"
 import {NavLink} from "react-router-dom";
 
 

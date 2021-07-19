@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./FormsConrtol.module.scss";
+import css from "./FormsConrtol.module.css";
 
 
 const TextareaInFormGen1 =  ({input, meta, ...props}) => {

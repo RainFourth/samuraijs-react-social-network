@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Preloader from "../../common/Preloader";
 import noAva from "../../../assets/images/user.png";
-import css from "./ProfileInfo.module.scss";
+import css from "./ProfileInfo.module.css";
 import {connect} from "react-redux";
 import {getUserProfile, getUserStatus, updateUserStatus} from "../../../realRedux/profileReducer";
 

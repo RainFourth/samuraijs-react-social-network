@@ -1,11 +1,11 @@
 import React from 'react'; //импорт из модуля react (они лежат в папке node_modules)
-import css from "./MyPosts.module.scss"
+import css from "./MyPosts.module.css"
 import Post from './Post/Post';
 import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../realRedux/profileReducer";
 
 
 const MyPosts = (props) => {
-    let postElems = props.state.profile.posts.map(post => <Post msg={post.msg} likesCnt={post.likesCnt}/>)
+    let postElems = props.state.profile.posts.map(post => <Post msg={post.msg} likesCnt={post.likesCnt}/>).reverse()
 
     let newPostTxtArea = React.createRef();
     let addPost = () => {

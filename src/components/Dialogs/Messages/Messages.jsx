@@ -1,5 +1,5 @@
 import React from "react"
-import css from "./Messages.module.scss"
+import css from "./Messages.module.css"
 import {Field, reduxForm} from "redux-form";
 import {maxLen, maxLen30, required} from "../../../utils/validators/validators";
 import TextareaInForm from "../../common/FormsControls/TextareaInForm(gen1)";

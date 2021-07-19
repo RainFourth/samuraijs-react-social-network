@@ -2,8 +2,9 @@ import {initialState} from "./initState";
 import {profileAPI, usersAPI} from "../api/api";
 
 
-export const ADD_POST = "ADD-POST";
 export const UPDATE_NEW_POST_TXT = "UPDATE-NEW-POST-TXT";
+export const ADD_POST = "ADD-POST";
+export const DELETE_POST = "DELETE_POST"
 export const SET_USER_PROFILE = "SET_USER_PROFILE";
 export const SET_USER_STATUS = "SET_USER_STATUS";
 export const SET_USER_ID = "SET_USER_ID";
@@ -34,6 +35,10 @@ const profileReducer = (state = initState, action) => {
             (newState.posts = [...state.posts]).push(newPost); //копируем исходный массив, чтобы react-redux понял, что надо это перерисовать
             newState.newPostVal = "";
             return newState;
+        case DELETE_POST:
+            newState = {...state};
+            newState.posts = state.posts.filter(post => post.id !== action.postId)
+            return newState;
         case SET_USER_PROFILE:
             newState = {...state};
             newState.profile = action.user;
@@ -51,8 +56,9 @@ const profileReducer = (state = initState, action) => {
 }
 
 // Action Creators
-export const addPostActionCreator = () => ({type: ADD_POST})
 export const updateNewPostTextActionCreator = (txt) => ({type: UPDATE_NEW_POST_TXT, txt: txt})
+export const addPostActionCreator = () => ({type: ADD_POST})
+export const deletePostAC = (postId) => ({type: DELETE_POST, postId})
 export const setUserProfileAC = (user) => ({type: SET_USER_PROFILE, user})
 export const setUserStatusAC = (status) => ({type: SET_USER_STATUS, status})
 export const setUserIdAC = (userId) => ({type: SET_USER_ID, userId})
