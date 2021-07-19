@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*переменная*/
+.header {
+  grid-area: h;
+  /*задаваемое имя области*/
+  background-color: green;
+}
+.header img {
+  /*для img лежащих в .header - вариант 2 */
+  width: 60px;
+}
+
+/*.header img { !*для img лежащих в .header - вариант 1 *!
+    width: 60px;
+}*/
+.loginBlock {
+  float: right;
+}
+.loginBlock a {
+  color: white;
+}
+
+/*# sourceMappingURL=Header.module.css.map */
